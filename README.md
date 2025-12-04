@@ -38,5 +38,7 @@ Running tool with higher permissions(sudo) --soem logs require root to collect e
 Output files are saved in /output/
 Can update the tool using "git pull"
 
-
+See the tool in action!
+**Youtube Demonstration Video**
+https://youtu.be/sPrR6pDo4K0
 
