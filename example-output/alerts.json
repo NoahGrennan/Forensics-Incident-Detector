@@ -1,0 +1,1315 @@
+[
+  {
+    "rule_id": "usb_connect",
+    "severity": 4,
+    "message": "USB device connected",
+    "source": "journalctl.txt",
+    "line_number": 383,
+    "raw_line": "Dec 04 00:37:47 localhost.localdomain kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.12",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:47+00:00"
+  },
+  {
+    "rule_id": "usb_connect",
+    "severity": 4,
+    "message": "USB device connected",
+    "source": "journalctl.txt",
+    "line_number": 408,
+    "raw_line": "Dec 04 00:37:47 localhost.localdomain kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.12",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:47+00:00"
+  },
+  {
+    "rule_id": "usb_connect",
+    "severity": 4,
+    "message": "USB device connected",
+    "source": "journalctl.txt",
+    "line_number": 461,
+    "raw_line": "Dec 04 00:37:47 localhost.localdomain kernel: usb 2-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:47+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 506,
+    "raw_line": "Dec 04 00:37:47 localhost.localdomain systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.",
+    "details": {
+      "svc": "systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch."
+    },
+    "timestamp": "2025-12-04T00:37:47+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 569,
+    "raw_line": "Dec 04 00:37:47 localhost.localdomain systemd[1]: Started systemd-journald.service - Journal Service.",
+    "details": {
+      "svc": "systemd-journald.service - Journal Service."
+    },
+    "timestamp": "2025-12-04T00:37:47+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 595,
+    "raw_line": "Dec 04 00:37:47 localhost.localdomain systemd[1]: Started systemd-udevd.service - Rule-based Manager for Device Events and Files.",
+    "details": {
+      "svc": "systemd-udevd.service - Rule-based Manager for Device Events and Files."
+    },
+    "timestamp": "2025-12-04T00:37:47+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 597,
+    "raw_line": "Dec 04 00:37:47 localhost.localdomain systemd[1]: Started plymouth-start.service - Show Plymouth Boot Screen.",
+    "details": {
+      "svc": "plymouth-start.service - Show Plymouth Boot Screen."
+    },
+    "timestamp": "2025-12-04T00:37:47+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 599,
+    "raw_line": "Dec 04 00:37:47 localhost.localdomain systemd[1]: Started systemd-ask-password-plymouth.path - Forward Password Requests to Plymouth Directory Watch.",
+    "details": {
+      "svc": "systemd-ask-password-plymouth.path - Forward Password Requests to Plymouth Directory Watch."
+    },
+    "timestamp": "2025-12-04T00:37:47+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 634,
+    "raw_line": "Dec 04 00:37:48 localhost.localdomain systemd[1]: Started haveged.service - Entropy Daemon based on the HAVEGE algorithm.",
+    "details": {
+      "svc": "haveged.service - Entropy Daemon based on the HAVEGE algorithm."
+    },
+    "timestamp": "2025-12-04T00:37:48+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 664,
+    "raw_line": "Dec 04 00:37:50 kali adduser[998]: Adding user `kali' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 665,
+    "raw_line": "Dec 04 00:37:50 kali adduser[998]: Adding new group `kali' (1000) ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 669,
+    "raw_line": "Dec 04 00:37:50 kali adduser[998]: Adding new user `kali' (1000) with group `kali (1000)' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "useradd",
+    "severity": 9,
+    "message": "useradd executed",
+    "source": "journalctl.txt",
+    "line_number": 670,
+    "raw_line": "Dec 04 00:37:50 kali useradd[1006]: new user: name=kali, UID=1000, GID=1000, home=/home/kali, shell=/bin/bash, from=none",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 671,
+    "raw_line": "Dec 04 00:37:50 kali adduser[998]: Creating home directory `/home/kali' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 672,
+    "raw_line": "Dec 04 00:37:50 kali adduser[998]: Copying files from `/etc/skel' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 673,
+    "raw_line": "Dec 04 00:37:50 kali adduser[998]: Adding new user `kali' to supplemental / extra groups `users' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 674,
+    "raw_line": "Dec 04 00:37:50 kali adduser[998]: Adding user `kali' to group `users' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 678,
+    "raw_line": "Dec 04 00:37:50 kali adduser[1038]: Adding user `kali' to group `audio' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 681,
+    "raw_line": "Dec 04 00:37:50 kali adduser[1045]: Adding user `kali' to group `cdrom' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 684,
+    "raw_line": "Dec 04 00:37:50 kali adduser[1052]: Adding user `kali' to group `dip' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 687,
+    "raw_line": "Dec 04 00:37:50 kali adduser[1059]: Adding user `kali' to group `floppy' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:50+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 690,
+    "raw_line": "Dec 04 00:37:51 kali adduser[1066]: Adding user `kali' to group `video' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:51+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 693,
+    "raw_line": "Dec 04 00:37:51 kali adduser[1073]: Adding user `kali' to group `plugdev' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:51+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 696,
+    "raw_line": "Dec 04 00:37:51 kali adduser[1080]: Adding user `kali' to group `netdev' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:51+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 699,
+    "raw_line": "Dec 04 00:37:51 kali adduser[1087]: The group `powerdev' does not exist.",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:51+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 700,
+    "raw_line": "Dec 04 00:37:51 kali adduser[1089]: Adding user `kali' to group `scanner' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:51+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 703,
+    "raw_line": "Dec 04 00:37:51 kali adduser[1096]: Adding user `kali' to group `bluetooth' ...",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:51+00:00"
+  },
+  {
+    "rule_id": "adduser",
+    "severity": 9,
+    "message": "adduser executed",
+    "source": "journalctl.txt",
+    "line_number": 706,
+    "raw_line": "Dec 04 00:37:51 kali adduser[1103]: The group `debian-tor' does not exist.",
+    "details": {},
+    "timestamp": "2025-12-04T00:37:51+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 751,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started apt-daily.timer - Daily apt download activities.",
+    "details": {
+      "svc": "apt-daily.timer - Daily apt download activities."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 752,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started apt-daily-upgrade.timer - Daily apt upgrade and clean activities.",
+    "details": {
+      "svc": "apt-daily-upgrade.timer - Daily apt upgrade and clean activities."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 753,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started apt-listchanges.timer - Try hourly to initialize apt-listchanges database for APT.",
+    "details": {
+      "svc": "apt-listchanges.timer - Try hourly to initialize apt-listchanges database for APT."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 754,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started dpkg-db-backup.timer - Daily dpkg database backup timer.",
+    "details": {
+      "svc": "dpkg-db-backup.timer - Daily dpkg database backup timer."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 755,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started e2scrub_all.timer - Periodic ext4 Online Metadata Check for All Filesystems.",
+    "details": {
+      "svc": "e2scrub_all.timer - Periodic ext4 Online Metadata Check for All Filesystems."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 756,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started fstrim.timer - Discard unused filesystem blocks once a week.",
+    "details": {
+      "svc": "fstrim.timer - Discard unused filesystem blocks once a week."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 757,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started logrotate.timer - Daily rotation of log files.",
+    "details": {
+      "svc": "logrotate.timer - Daily rotation of log files."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 758,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started man-db.timer - Daily man-db regeneration.",
+    "details": {
+      "svc": "man-db.timer - Daily man-db regeneration."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 759,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started phpsessionclean.timer - Clean PHP session files every 30 mins.",
+    "details": {
+      "svc": "phpsessionclean.timer - Clean PHP session files every 30 mins."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 760,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started plocate-updatedb.timer - Update the plocate database daily.",
+    "details": {
+      "svc": "plocate-updatedb.timer - Update the plocate database daily."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 761,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started systemd-tmpfiles-clean.timer - Daily Cleanup of Temporary Directories.",
+    "details": {
+      "svc": "systemd-tmpfiles-clean.timer - Daily Cleanup of Temporary Directories."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 775,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started cron.service - Regular background program processing daemon.",
+    "details": {
+      "svc": "cron.service - Regular background program processing daemon."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 786,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started dbus.service - D-Bus System Message Bus.",
+    "details": {
+      "svc": "dbus.service - D-Bus System Message Bus."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 793,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started systemd-logind.service - User Login Management.",
+    "details": {
+      "svc": "systemd-logind.service - User Login Management."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 802,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started polkit.service - Authorization Manager.",
+    "details": {
+      "svc": "polkit.service - Authorization Manager."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 807,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started accounts-daemon.service - Accounts Service.",
+    "details": {
+      "svc": "accounts-daemon.service - Accounts Service."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 855,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started virtualbox-guest-utils.service - Virtualbox guest utils.",
+    "details": {
+      "svc": "virtualbox-guest-utils.service - Virtualbox guest utils."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 862,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started systemd-hostnamed.service - Hostname Service.",
+    "details": {
+      "svc": "systemd-hostnamed.service - Hostname Service."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 871,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started ModemManager.service - Modem Manager.",
+    "details": {
+      "svc": "ModemManager.service - Modem Manager."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 895,
+    "raw_line": "Dec 04 00:37:56 kali systemd[1]: Started NetworkManager.service - Network Manager.",
+    "details": {
+      "svc": "NetworkManager.service - Network Manager."
+    },
+    "timestamp": "2025-12-04T00:37:56+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 914,
+    "raw_line": "Dec 04 00:37:57 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.",
+    "details": {
+      "svc": "NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service."
+    },
+    "timestamp": "2025-12-04T00:37:57+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 927,
+    "raw_line": "Dec 04 00:37:57 kali systemd[1]: Started getty@tty1.service - Getty on tty1.",
+    "details": {
+      "svc": "getty@tty1.service - Getty on tty1."
+    },
+    "timestamp": "2025-12-04T00:37:57+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 930,
+    "raw_line": "Dec 04 00:37:57 kali systemd[1]: Started lightdm.service - Light Display Manager.",
+    "details": {
+      "svc": "lightdm.service - Light Display Manager."
+    },
+    "timestamp": "2025-12-04T00:37:57+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 945,
+    "raw_line": "Dec 04 00:37:57 kali systemd[1]: Started rpc-statd-notify.service - Notify NFS peers of a restart.",
+    "details": {
+      "svc": "rpc-statd-notify.service - Notify NFS peers of a restart."
+    },
+    "timestamp": "2025-12-04T00:37:57+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 980,
+    "raw_line": "Dec 04 00:37:57 kali systemd[1]: Started user@1000.service - User Manager for UID 1000.",
+    "details": {
+      "svc": "user@1000.service - User Manager for UID 1000."
+    },
+    "timestamp": "2025-12-04T00:37:57+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 981,
+    "raw_line": "Dec 04 00:37:57 kali systemd[1]: Started session-1.scope - Session 1 of User kali.",
+    "details": {
+      "svc": "session-1.scope - Session 1 of User kali."
+    },
+    "timestamp": "2025-12-04T00:37:57+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 983,
+    "raw_line": "Dec 04 00:37:57 kali systemd[1493]: Started pipewire.service - PipeWire Multimedia Service.",
+    "details": {
+      "svc": "pipewire.service - PipeWire Multimedia Service."
+    },
+    "timestamp": "2025-12-04T00:37:57+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 984,
+    "raw_line": "Dec 04 00:37:57 kali systemd[1493]: Started filter-chain.service - PipeWire filter chain daemon.",
+    "details": {
+      "svc": "filter-chain.service - PipeWire filter chain daemon."
+    },
+    "timestamp": "2025-12-04T00:37:57+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 985,
+    "raw_line": "Dec 04 00:37:57 kali systemd[1493]: Started wireplumber.service - Multimedia Service Session Manager.",
+    "details": {
+      "svc": "wireplumber.service - Multimedia Service Session Manager."
+    },
+    "timestamp": "2025-12-04T00:37:57+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 986,
+    "raw_line": "Dec 04 00:37:57 kali systemd[1493]: Started pipewire-pulse.service - PipeWire PulseAudio.",
+    "details": {
+      "svc": "pipewire-pulse.service - PipeWire PulseAudio."
+    },
+    "timestamp": "2025-12-04T00:37:57+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 987,
+    "raw_line": "Dec 04 00:37:58 kali systemd[1493]: Started dbus.service - D-Bus User Message Bus.",
+    "details": {
+      "svc": "dbus.service - D-Bus User Message Bus."
+    },
+    "timestamp": "2025-12-04T00:37:58+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 988,
+    "raw_line": "Dec 04 00:37:58 kali systemd[1493]: Started mpris-proxy.service - Bluetooth mpris proxy.",
+    "details": {
+      "svc": "mpris-proxy.service - Bluetooth mpris proxy."
+    },
+    "timestamp": "2025-12-04T00:37:58+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 994,
+    "raw_line": "Dec 04 00:37:58 kali systemd[1]: Started rtkit-daemon.service - RealtimeKit Scheduling Policy Service.",
+    "details": {
+      "svc": "rtkit-daemon.service - RealtimeKit Scheduling Policy Service."
+    },
+    "timestamp": "2025-12-04T00:37:58+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1044,
+    "raw_line": "Dec 04 00:38:00 kali systemd[1]: Started session-3.scope - Session 3 of User kali.",
+    "details": {
+      "svc": "session-3.scope - Session 3 of User kali."
+    },
+    "timestamp": "2025-12-04T00:38:00+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1120,
+    "raw_line": "Dec 04 00:38:01 kali systemd[1493]: Started at-spi-dbus-bus.service - Accessibility services bus.",
+    "details": {
+      "svc": "at-spi-dbus-bus.service - Accessibility services bus."
+    },
+    "timestamp": "2025-12-04T00:38:01+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1124,
+    "raw_line": "Dec 04 00:38:01 kali systemd[1493]: Started xfconfd.service - Xfce configuration service.",
+    "details": {
+      "svc": "xfconfd.service - Xfce configuration service."
+    },
+    "timestamp": "2025-12-04T00:38:01+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1128,
+    "raw_line": "Dec 04 00:38:01 kali systemd[1493]: Started gpg-agent.service - GnuPG cryptographic agent and passphrase cache.",
+    "details": {
+      "svc": "gpg-agent.service - GnuPG cryptographic agent and passphrase cache."
+    },
+    "timestamp": "2025-12-04T00:38:01+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1154,
+    "raw_line": "Dec 04 00:38:01 kali systemd[1493]: Started gpg-agent.service - GnuPG cryptographic agent and passphrase cache.",
+    "details": {
+      "svc": "gpg-agent.service - GnuPG cryptographic agent and passphrase cache."
+    },
+    "timestamp": "2025-12-04T00:38:01+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1165,
+    "raw_line": "Dec 04 00:38:01 kali systemd[1493]: Started gvfs-daemon.service - Virtual filesystem service.",
+    "details": {
+      "svc": "gvfs-daemon.service - Virtual filesystem service."
+    },
+    "timestamp": "2025-12-04T00:38:01+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1185,
+    "raw_line": "Dec 04 00:38:03 kali systemd[1493]: Started dconf.service - User preferences database.",
+    "details": {
+      "svc": "dconf.service - User preferences database."
+    },
+    "timestamp": "2025-12-04T00:38:03+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1202,
+    "raw_line": "Dec 04 00:38:05 kali systemd[1493]: Started xfce4-notifyd.service - XFCE notifications service.",
+    "details": {
+      "svc": "xfce4-notifyd.service - XFCE notifications service."
+    },
+    "timestamp": "2025-12-04T00:38:05+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1207,
+    "raw_line": "Dec 04 00:38:05 kali systemd[1]: Started colord.service - Manage, Install and Generate Color Profiles.",
+    "details": {
+      "svc": "colord.service - Manage, Install and Generate Color Profiles."
+    },
+    "timestamp": "2025-12-04T00:38:05+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1210,
+    "raw_line": "Dec 04 00:38:05 kali systemd[1]: Started upower.service - Daemon for power management.",
+    "details": {
+      "svc": "upower.service - Daemon for power management."
+    },
+    "timestamp": "2025-12-04T00:38:05+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1244,
+    "raw_line": "Dec 04 00:38:10 kali systemd[1]: Started udisks2.service - Disk Manager.",
+    "details": {
+      "svc": "udisks2.service - Disk Manager."
+    },
+    "timestamp": "2025-12-04T00:38:10+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1247,
+    "raw_line": "Dec 04 00:38:10 kali systemd[1493]: Started gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor.",
+    "details": {
+      "svc": "gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor."
+    },
+    "timestamp": "2025-12-04T00:38:10+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1251,
+    "raw_line": "Dec 04 00:38:10 kali systemd[1493]: Started gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor.",
+    "details": {
+      "svc": "gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor."
+    },
+    "timestamp": "2025-12-04T00:38:10+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1255,
+    "raw_line": "Dec 04 00:38:10 kali systemd[1493]: Started gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor.",
+    "details": {
+      "svc": "gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor."
+    },
+    "timestamp": "2025-12-04T00:38:10+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1259,
+    "raw_line": "Dec 04 00:38:10 kali systemd[1493]: Started gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor.",
+    "details": {
+      "svc": "gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor."
+    },
+    "timestamp": "2025-12-04T00:38:10+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1263,
+    "raw_line": "Dec 04 00:38:11 kali systemd[1493]: Started gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor.",
+    "details": {
+      "svc": "gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor."
+    },
+    "timestamp": "2025-12-04T00:38:11+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1265,
+    "raw_line": "Dec 04 00:38:11 kali systemd[1493]: Started tumblerd.service - Thumbnailing service.",
+    "details": {
+      "svc": "tumblerd.service - Thumbnailing service."
+    },
+    "timestamp": "2025-12-04T00:38:11+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1269,
+    "raw_line": "Dec 04 00:38:11 kali systemd[1493]: Started gvfs-metadata.service - Virtual filesystem metadata service.",
+    "details": {
+      "svc": "gvfs-metadata.service - Virtual filesystem metadata service."
+    },
+    "timestamp": "2025-12-04T00:38:11+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1276,
+    "raw_line": "Dec 04 00:38:11 kali systemd[1493]: Started obex.service - Bluetooth OBEX service.",
+    "details": {
+      "svc": "obex.service - Bluetooth OBEX service."
+    },
+    "timestamp": "2025-12-04T00:38:11+00:00"
+  },
+  {
+    "rule_id": "cron_cmd",
+    "severity": 5,
+    "message": "Cron job executed",
+    "source": "journalctl.txt",
+    "line_number": 1297,
+    "raw_line": "Dec 04 00:39:01 kali CRON[2549]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)",
+    "details": {
+      "user": "root",
+      "cmd": "  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi"
+    },
+    "timestamp": "2025-12-04T00:39:01+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1304,
+    "raw_line": "Dec 04 00:39:25 kali systemd[1493]: Started xdg-permission-store.service - sandboxed app permission store.",
+    "details": {
+      "svc": "xdg-permission-store.service - sandboxed app permission store."
+    },
+    "timestamp": "2025-12-04T00:39:25+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1308,
+    "raw_line": "Dec 04 00:39:25 kali systemd[1493]: Started xdg-document-portal.service - flatpak document portal service.",
+    "details": {
+      "svc": "xdg-document-portal.service - flatpak document portal service."
+    },
+    "timestamp": "2025-12-04T00:39:25+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1312,
+    "raw_line": "Dec 04 00:39:25 kali systemd[1493]: Started xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).",
+    "details": {
+      "svc": "xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)."
+    },
+    "timestamp": "2025-12-04T00:39:25+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1320,
+    "raw_line": "Dec 04 00:39:25 kali systemd[1493]: Started xdg-desktop-portal.service - Portal service.",
+    "details": {
+      "svc": "xdg-desktop-portal.service - Portal service."
+    },
+    "timestamp": "2025-12-04T00:39:25+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1327,
+    "raw_line": "Dec 04 00:40:50 kali systemd[1]: Started run-p3731-i4031.service - [systemd-run] systemd-stdio-bridge \"-punix:path=\\${XDG_RUNTIME_DIR}/bus\".",
+    "details": {
+      "svc": "run-p3731-i4031.service - [systemd-run] systemd-stdio-bridge \"-punix:path=\\${XDG_RUNTIME_DIR}/bus\"."
+    },
+    "timestamp": "2025-12-04T00:40:50+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1329,
+    "raw_line": "Dec 04 00:40:50 kali systemd[1]: Started session-5.scope - Session 5 of User kali.",
+    "details": {
+      "svc": "session-5.scope - Session 5 of User kali."
+    },
+    "timestamp": "2025-12-04T00:40:50+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1451,
+    "raw_line": "Dec 04 00:40:57 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.",
+    "details": {
+      "svc": "ssh.service - OpenBSD Secure Shell server."
+    },
+    "timestamp": "2025-12-04T00:40:57+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1472,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6480]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1480,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6471]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1485,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6479]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1490,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6477]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1498,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6484]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1503,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6470]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1508,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6474]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "success_ssh",
+    "severity": 3,
+    "message": "Successful SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1513,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6472]: Accepted password for kali from 10.0.2.15 port 48624 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1518,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6475]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1523,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6481]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1529,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6476]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "auth_fail",
+    "severity": 8,
+    "message": "Authentication failure (PAM)",
+    "source": "journalctl.txt",
+    "line_number": 1535,
+    "raw_line": "Dec 04 00:44:21 kali sshd-session[6483]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali",
+    "details": {
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "svc_started",
+    "severity": 6,
+    "message": "Service started (systemd)",
+    "source": "journalctl.txt",
+    "line_number": 1540,
+    "raw_line": "Dec 04 00:44:21 kali systemd[1]: Started session-6.scope - Session 6 of User kali.",
+    "details": {
+      "svc": "session-6.scope - Session 6 of User kali."
+    },
+    "timestamp": "2025-12-04T00:44:21+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1546,
+    "raw_line": "Dec 04 00:44:22 kali sshd-session[6470]: Failed password for kali from 10.0.2.15 port 48606 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:22+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1547,
+    "raw_line": "Dec 04 00:44:22 kali sshd-session[6477]: Failed password for kali from 10.0.2.15 port 48668 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:22+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1548,
+    "raw_line": "Dec 04 00:44:22 kali sshd-session[6471]: Failed password for kali from 10.0.2.15 port 48622 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:22+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1549,
+    "raw_line": "Dec 04 00:44:22 kali sshd-session[6476]: Failed password for kali from 10.0.2.15 port 48658 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:22+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1550,
+    "raw_line": "Dec 04 00:44:22 kali sshd-session[6479]: Failed password for kali from 10.0.2.15 port 48678 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:22+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1557,
+    "raw_line": "Dec 04 00:44:23 kali sshd-session[6474]: Failed password for kali from 10.0.2.15 port 48638 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:23+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1558,
+    "raw_line": "Dec 04 00:44:23 kali sshd-session[6481]: Failed password for kali from 10.0.2.15 port 48700 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:23+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1559,
+    "raw_line": "Dec 04 00:44:23 kali sshd-session[6480]: Failed password for kali from 10.0.2.15 port 48688 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:23+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1560,
+    "raw_line": "Dec 04 00:44:23 kali sshd-session[6484]: Failed password for kali from 10.0.2.15 port 48730 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:23+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1561,
+    "raw_line": "Dec 04 00:44:23 kali sshd-session[6475]: Failed password for kali from 10.0.2.15 port 48642 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:23+00:00"
+  },
+  {
+    "rule_id": "failed_ssh",
+    "severity": 8,
+    "message": "Failed SSH login",
+    "source": "journalctl.txt",
+    "line_number": 1562,
+    "raw_line": "Dec 04 00:44:23 kali sshd-session[6483]: Failed password for kali from 10.0.2.15 port 48718 ssh2",
+    "details": {
+      "user": "kali",
+      "ip": "10.0.2.15"
+    },
+    "timestamp": "2025-12-04T00:44:23+00:00"
+  }
+]

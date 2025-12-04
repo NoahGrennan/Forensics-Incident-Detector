@@ -1,0 +1,169 @@
+
+<html>
+<head>
+<title>Incident Detection Report</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+h1 {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+th {
+    background: #444;
+    color: white;
+}
+</style>
+</head>
+<body>
+<h1>Incident Detection Report</h1>
+
+<p><b>Collected At:</b> 2025-12-04T00:44:38.480217+00:00</p>
+<p><b>Incident Types:</b> 8</p>
+<p><b>Total Alerts:</b> 112</p>
+
+<h2>Alerts</h2>
+<table>
+<tr><th>Type</th><th>Details</th><th>Timestamp</th></tr>
+<tr><td>svc_started</td><td>6</td><td>66</td><td>Dec 04 00:37:47 localhost.localdomain systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.</td></tr>
+<tr><td>adduser</td><td>9</td><td>18</td><td>Dec 04 00:37:50 kali adduser[998]: Adding user `kali' ...</td></tr>
+<tr><td>auth_fail</td><td>8</td><td>11</td><td>Dec 04 00:44:21 kali sshd-session[6480]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali</td></tr>
+<tr><td>failed_ssh</td><td>8</td><td>11</td><td>Dec 04 00:44:22 kali sshd-session[6470]: Failed password for kali from 10.0.2.15 port 48606 ssh2</td></tr>
+<tr><td>usb_connect</td><td>4</td><td>3</td><td>Dec 04 00:37:47 localhost.localdomain kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.12</td></tr>
+<tr><td>useradd</td><td>9</td><td>1</td><td>Dec 04 00:37:50 kali useradd[1006]: new user: name=kali, UID=1000, GID=1000, home=/home/kali, shell=/bin/bash, from=none</td></tr>
+<tr><td>cron_cmd</td><td>5</td><td>1</td><td>Dec 04 00:39:01 kali CRON[2549]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)</td></tr>
+<tr><td>success_ssh</td><td>3</td><td>1</td><td>Dec 04 00:44:21 kali sshd-session[6472]: Accepted password for kali from 10.0.2.15 port 48624 ssh2</td></tr>
+
+</table>
+
+<h2>Log Excerpts</h2>
+<pre>
+journalctl.txt:Dec 04 00:37:47 localhost.localdomain kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.12
+journalctl.txt:Dec 04 00:37:47 localhost.localdomain kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.12
+journalctl.txt:Dec 04 00:37:47 localhost.localdomain kernel: usb 2-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+journalctl.txt:Dec 04 00:37:47 localhost.localdomain systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+journalctl.txt:Dec 04 00:37:47 localhost.localdomain systemd[1]: Started systemd-journald.service - Journal Service.
+journalctl.txt:Dec 04 00:37:47 localhost.localdomain systemd[1]: Started systemd-udevd.service - Rule-based Manager for Device Events and Files.
+journalctl.txt:Dec 04 00:37:47 localhost.localdomain systemd[1]: Started plymouth-start.service - Show Plymouth Boot Screen.
+journalctl.txt:Dec 04 00:37:47 localhost.localdomain systemd[1]: Started systemd-ask-password-plymouth.path - Forward Password Requests to Plymouth Directory Watch.
+journalctl.txt:Dec 04 00:37:48 localhost.localdomain systemd[1]: Started haveged.service - Entropy Daemon based on the HAVEGE algorithm.
+journalctl.txt:Dec 04 00:37:50 kali adduser[998]: Adding user `kali' ...
+journalctl.txt:Dec 04 00:37:50 kali adduser[998]: Adding new group `kali' (1000) ...
+journalctl.txt:Dec 04 00:37:50 kali adduser[998]: Adding new user `kali' (1000) with group `kali (1000)' ...
+journalctl.txt:Dec 04 00:37:50 kali useradd[1006]: new user: name=kali, UID=1000, GID=1000, home=/home/kali, shell=/bin/bash, from=none
+journalctl.txt:Dec 04 00:37:50 kali adduser[998]: Creating home directory `/home/kali' ...
+journalctl.txt:Dec 04 00:37:50 kali adduser[998]: Copying files from `/etc/skel' ...
+journalctl.txt:Dec 04 00:37:50 kali adduser[998]: Adding new user `kali' to supplemental / extra groups `users' ...
+journalctl.txt:Dec 04 00:37:50 kali adduser[998]: Adding user `kali' to group `users' ...
+journalctl.txt:Dec 04 00:37:50 kali adduser[1038]: Adding user `kali' to group `audio' ...
+journalctl.txt:Dec 04 00:37:50 kali adduser[1045]: Adding user `kali' to group `cdrom' ...
+journalctl.txt:Dec 04 00:37:50 kali adduser[1052]: Adding user `kali' to group `dip' ...
+journalctl.txt:Dec 04 00:37:50 kali adduser[1059]: Adding user `kali' to group `floppy' ...
+journalctl.txt:Dec 04 00:37:51 kali adduser[1066]: Adding user `kali' to group `video' ...
+journalctl.txt:Dec 04 00:37:51 kali adduser[1073]: Adding user `kali' to group `plugdev' ...
+journalctl.txt:Dec 04 00:37:51 kali adduser[1080]: Adding user `kali' to group `netdev' ...
+journalctl.txt:Dec 04 00:37:51 kali adduser[1087]: The group `powerdev' does not exist.
+journalctl.txt:Dec 04 00:37:51 kali adduser[1089]: Adding user `kali' to group `scanner' ...
+journalctl.txt:Dec 04 00:37:51 kali adduser[1096]: Adding user `kali' to group `bluetooth' ...
+journalctl.txt:Dec 04 00:37:51 kali adduser[1103]: The group `debian-tor' does not exist.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started apt-daily.timer - Daily apt download activities.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started apt-daily-upgrade.timer - Daily apt upgrade and clean activities.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started apt-listchanges.timer - Try hourly to initialize apt-listchanges database for APT.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started dpkg-db-backup.timer - Daily dpkg database backup timer.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started e2scrub_all.timer - Periodic ext4 Online Metadata Check for All Filesystems.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started fstrim.timer - Discard unused filesystem blocks once a week.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started logrotate.timer - Daily rotation of log files.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started man-db.timer - Daily man-db regeneration.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started phpsessionclean.timer - Clean PHP session files every 30 mins.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started plocate-updatedb.timer - Update the plocate database daily.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started systemd-tmpfiles-clean.timer - Daily Cleanup of Temporary Directories.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started cron.service - Regular background program processing daemon.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started dbus.service - D-Bus System Message Bus.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started systemd-logind.service - User Login Management.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started polkit.service - Authorization Manager.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started accounts-daemon.service - Accounts Service.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started virtualbox-guest-utils.service - Virtualbox guest utils.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started systemd-hostnamed.service - Hostname Service.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started ModemManager.service - Modem Manager.
+journalctl.txt:Dec 04 00:37:56 kali systemd[1]: Started NetworkManager.service - Network Manager.
+journalctl.txt:Dec 04 00:37:57 kali systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+journalctl.txt:Dec 04 00:37:57 kali systemd[1]: Started getty@tty1.service - Getty on tty1.
+journalctl.txt:Dec 04 00:37:57 kali systemd[1]: Started lightdm.service - Light Display Manager.
+journalctl.txt:Dec 04 00:37:57 kali systemd[1]: Started rpc-statd-notify.service - Notify NFS peers of a restart.
+journalctl.txt:Dec 04 00:37:57 kali systemd[1]: Started user@1000.service - User Manager for UID 1000.
+journalctl.txt:Dec 04 00:37:57 kali systemd[1]: Started session-1.scope - Session 1 of User kali.
+journalctl.txt:Dec 04 00:37:57 kali systemd[1493]: Started pipewire.service - PipeWire Multimedia Service.
+journalctl.txt:Dec 04 00:37:57 kali systemd[1493]: Started filter-chain.service - PipeWire filter chain daemon.
+journalctl.txt:Dec 04 00:37:57 kali systemd[1493]: Started wireplumber.service - Multimedia Service Session Manager.
+journalctl.txt:Dec 04 00:37:57 kali systemd[1493]: Started pipewire-pulse.service - PipeWire PulseAudio.
+journalctl.txt:Dec 04 00:37:58 kali systemd[1493]: Started dbus.service - D-Bus User Message Bus.
+journalctl.txt:Dec 04 00:37:58 kali systemd[1493]: Started mpris-proxy.service - Bluetooth mpris proxy.
+journalctl.txt:Dec 04 00:37:58 kali systemd[1]: Started rtkit-daemon.service - RealtimeKit Scheduling Policy Service.
+journalctl.txt:Dec 04 00:38:00 kali systemd[1]: Started session-3.scope - Session 3 of User kali.
+journalctl.txt:Dec 04 00:38:01 kali systemd[1493]: Started at-spi-dbus-bus.service - Accessibility services bus.
+journalctl.txt:Dec 04 00:38:01 kali systemd[1493]: Started xfconfd.service - Xfce configuration service.
+journalctl.txt:Dec 04 00:38:01 kali systemd[1493]: Started gpg-agent.service - GnuPG cryptographic agent and passphrase cache.
+journalctl.txt:Dec 04 00:38:01 kali systemd[1493]: Started gpg-agent.service - GnuPG cryptographic agent and passphrase cache.
+journalctl.txt:Dec 04 00:38:01 kali systemd[1493]: Started gvfs-daemon.service - Virtual filesystem service.
+journalctl.txt:Dec 04 00:38:03 kali systemd[1493]: Started dconf.service - User preferences database.
+journalctl.txt:Dec 04 00:38:05 kali systemd[1493]: Started xfce4-notifyd.service - XFCE notifications service.
+journalctl.txt:Dec 04 00:38:05 kali systemd[1]: Started colord.service - Manage, Install and Generate Color Profiles.
+journalctl.txt:Dec 04 00:38:05 kali systemd[1]: Started upower.service - Daemon for power management.
+journalctl.txt:Dec 04 00:38:10 kali systemd[1]: Started udisks2.service - Disk Manager.
+journalctl.txt:Dec 04 00:38:10 kali systemd[1493]: Started gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor.
+journalctl.txt:Dec 04 00:38:10 kali systemd[1493]: Started gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor.
+journalctl.txt:Dec 04 00:38:10 kali systemd[1493]: Started gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor.
+journalctl.txt:Dec 04 00:38:10 kali systemd[1493]: Started gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor.
+journalctl.txt:Dec 04 00:38:11 kali systemd[1493]: Started gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor.
+journalctl.txt:Dec 04 00:38:11 kali systemd[1493]: Started tumblerd.service - Thumbnailing service.
+journalctl.txt:Dec 04 00:38:11 kali systemd[1493]: Started gvfs-metadata.service - Virtual filesystem metadata service.
+journalctl.txt:Dec 04 00:38:11 kali systemd[1493]: Started obex.service - Bluetooth OBEX service.
+journalctl.txt:Dec 04 00:39:01 kali CRON[2549]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+journalctl.txt:Dec 04 00:39:25 kali systemd[1493]: Started xdg-permission-store.service - sandboxed app permission store.
+journalctl.txt:Dec 04 00:39:25 kali systemd[1493]: Started xdg-document-portal.service - flatpak document portal service.
+journalctl.txt:Dec 04 00:39:25 kali systemd[1493]: Started xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+journalctl.txt:Dec 04 00:39:25 kali systemd[1493]: Started xdg-desktop-portal.service - Portal service.
+journalctl.txt:Dec 04 00:40:50 kali systemd[1]: Started run-p3731-i4031.service - [systemd-run] systemd-stdio-bridge "-punix:path=\${XDG_RUNTIME_DIR}/bus".
+journalctl.txt:Dec 04 00:40:50 kali systemd[1]: Started session-5.scope - Session 5 of User kali.
+journalctl.txt:Dec 04 00:40:57 kali systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6480]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6471]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6479]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6477]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6484]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6470]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6474]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6472]: Accepted password for kali from 10.0.2.15 port 48624 ssh2
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6475]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6481]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6476]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali sshd-session[6483]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+journalctl.txt:Dec 04 00:44:21 kali systemd[1]: Started session-6.scope - Session 6 of User kali.
+journalctl.txt:Dec 04 00:44:22 kali sshd-session[6470]: Failed password for kali from 10.0.2.15 port 48606 ssh2
+journalctl.txt:Dec 04 00:44:22 kali sshd-session[6477]: Failed password for kali from 10.0.2.15 port 48668 ssh2
+journalctl.txt:Dec 04 00:44:22 kali sshd-session[6471]: Failed password for kali from 10.0.2.15 port 48622 ssh2
+journalctl.txt:Dec 04 00:44:22 kali sshd-session[6476]: Failed password for kali from 10.0.2.15 port 48658 ssh2
+journalctl.txt:Dec 04 00:44:22 kali sshd-session[6479]: Failed password for kali from 10.0.2.15 port 48678 ssh2
+journalctl.txt:Dec 04 00:44:23 kali sshd-session[6474]: Failed password for kali from 10.0.2.15 port 48638 ssh2
+journalctl.txt:Dec 04 00:44:23 kali sshd-session[6481]: Failed password for kali from 10.0.2.15 port 48700 ssh2
+journalctl.txt:Dec 04 00:44:23 kali sshd-session[6480]: Failed password for kali from 10.0.2.15 port 48688 ssh2
+journalctl.txt:Dec 04 00:44:23 kali sshd-session[6484]: Failed password for kali from 10.0.2.15 port 48730 ssh2
+journalctl.txt:Dec 04 00:44:23 kali sshd-session[6475]: Failed password for kali from 10.0.2.15 port 48642 ssh2
+journalctl.txt:Dec 04 00:44:23 kali sshd-session[6483]: Failed password for kali from 10.0.2.15 port 48718 ssh2
+</pre>
+
+</body>
+</html>

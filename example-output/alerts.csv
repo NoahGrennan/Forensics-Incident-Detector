@@ -1,0 +1,9 @@
+rule_id,severity,message,count,example
+svc_started,6,Service started (systemd),66,Dec 04 00:37:47 localhost.localdomain systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+adduser,9,adduser executed,18,Dec 04 00:37:50 kali adduser[998]: Adding user `kali' ...
+auth_fail,8,Authentication failure (PAM),11,Dec 04 00:44:21 kali sshd-session[6480]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.0.2.15  user=kali
+failed_ssh,8,Failed SSH login,11,Dec 04 00:44:22 kali sshd-session[6470]: Failed password for kali from 10.0.2.15 port 48606 ssh2
+usb_connect,4,USB device connected,3,"Dec 04 00:37:47 localhost.localdomain kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.12"
+useradd,9,useradd executed,1,"Dec 04 00:37:50 kali useradd[1006]: new user: name=kali, UID=1000, GID=1000, home=/home/kali, shell=/bin/bash, from=none"
+cron_cmd,5,Cron job executed,1,Dec 04 00:39:01 kali CRON[2549]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+success_ssh,3,Successful SSH login,1,Dec 04 00:44:21 kali sshd-session[6472]: Accepted password for kali from 10.0.2.15 port 48624 ssh2
