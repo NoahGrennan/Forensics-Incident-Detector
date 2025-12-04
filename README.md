@@ -18,7 +18,7 @@ Commands in bash
 python3 incidetector.py
 
 help: python3  incidetector.py --help
-analize ssh logs: python3 incidetector.py --ssh
+analyze ssh logs: python3 incidetector.py --ssh
 full report: python3 incidetector.py --full
 
 Clone respiratory in bash
